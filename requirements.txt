@@ -4,7 +4,5 @@ wandb
 gunicorn
 Flask
 scikit-image
-tensorboardX==1.6
-jupyterlab
 opencv-python>=3.3.0.10
 pillow==6.2.2
