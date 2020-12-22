@@ -202,7 +202,7 @@ class ModelImageVisualizer:
         return rows, columns
 
 
-c
+
 
 def get_image_colorizer(
     render_factor: int = 35, artistic: bool = True
