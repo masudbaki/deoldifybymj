@@ -43,7 +43,8 @@ def allowed_file(filename):
 # define a predict function as an endpoint
 @app.route("/process", methods=["POST"])
 def process_image():
-
+    upload_directory = '/data/upload/'
+    results_img_directory = '/data/result_images/'
     input_path = generate_random_filename(upload_directory,"jpeg")
     output_path = os.path.join(results_img_directory, os.path.basename(input_path))
 
