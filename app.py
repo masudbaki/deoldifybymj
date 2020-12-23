@@ -25,9 +25,6 @@ from deoldify.visualize import *
 from pathlib import Path
 import traceback
 
-upload_directory = '/data/upload/'
-results_img_directory = '/data/result_images/'
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 
 # Handle switch between GPU and CPU
