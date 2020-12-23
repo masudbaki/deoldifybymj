@@ -57,7 +57,7 @@ def process_image():
         if 'file' in request.files:
             file = request.files['file']
             if allowed_file(file.filename):
-                #file.save(input_path)
+                file.save(input_path)
                 print(os.getcwd())
             try:
                 render_factor = request.form.getlist('render_factor')[0]
