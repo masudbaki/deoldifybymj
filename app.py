@@ -75,6 +75,7 @@ def process_image():
                 render_factor = 30
 
         try:
+            image_colorizer = get_image_colorizer(artistic=True)
             image_colorizer.plot_transformed_image(path=input_path, figsize=(20,20),
                 render_factor=int(render_factor), display_render_factor=True, compare=False)
         except:
