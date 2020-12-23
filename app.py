@@ -45,6 +45,8 @@ def allowed_file(filename):
 def process_image():
     upload_directory = '/data/upload/'
     results_img_directory = '/data/result_images/'
+    ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
+    
     input_path = generate_random_filename(upload_directory,"jpeg")
     output_path = os.path.join(results_img_directory, os.path.basename(input_path))
 
