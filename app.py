@@ -25,6 +25,10 @@ from deoldify.visualize import *
 from pathlib import Path
 import traceback
 
+upload_directory = '/data/upload/'
+results_img_directory = '/data/result_images/'
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
+
 
 # Handle switch between GPU and CPU
 if torch.cuda.is_available():
@@ -38,6 +42,7 @@ app = Flask(__name__)
 
 
 def allowed_file(filename):
+    ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # define a predict function as an endpoint
