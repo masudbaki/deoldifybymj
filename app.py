@@ -46,8 +46,8 @@ def allowed_file(filename):
 @app.route("/process", methods=["POST"])
 def process_image():
     MYDIR = os.path.dirname(__file__)
-    upload_directory = os.path.join(MYDIR,'/data/upload/')
-    results_img_directory = os.path.join(MYDIR,'/data/result_images/')
+    upload_directory = '/data/upload/'
+    results_img_directory = '/data/result_images/'
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
     
     input_path = generate_random_filename(upload_directory,"jpeg")
