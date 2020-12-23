@@ -51,7 +51,7 @@ def process_image():
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
     
     #input_path = generate_random_filename(upload_directory,"jpeg")
-    input_path = os.getcwd()
+    input_path = os.getcwd()+"/data"
     output_path = os.path.join(results_img_directory, os.path.basename(input_path))
 
     try:
